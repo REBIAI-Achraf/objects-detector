@@ -152,6 +152,24 @@
  
 
         </section>
+   <script>
+        // Fonction de détection du type d'appareil (mobile)
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        // Supprimer le script si l'appareil est un mobile
+        if (isMobile()) {
+            // Attendez que le contenu de la page soit chargé
+            document.addEventListener('DOMContentLoaded', function () {
+                var skrollrScript = document.querySelector('script[src="skrollr.js"]');
+                if (skrollrScript) {
+                    skrollrScript.remove();
+                }
+            });
+        }
+    </script>
+
       <script src="skrollr.js"></script>
     <script type="text/javascript">
       function toggle(){
@@ -162,20 +180,6 @@
   
       }
       var r = skrollr.init();
-    </script>
-<script>
-        // Fonction de détection du type d'appareil (mobile)
-        function isMobile() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-
-        // Supprimer le script si l'appareil est un mobile
-        if (isMobile()) {
-            var skrollrScript = document.querySelector('script[src="skrollr.js"]');
-            if (skrollrScript) {
-                skrollrScript.remove();
-            }
-        }
     </script>
 
     <div class="main-footer">
