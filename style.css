@@ -88,7 +88,7 @@
 
   }
   .toggle.active{
-  background: url("img/close.png");
+  background: url("close.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25px;
@@ -232,7 +232,7 @@ background: linear-gradient(to bottom,rgba(6,55,115,25),rgba(6,70,130,35),#0091F
    width: 170px;
   margin-left: auto;
     margin-right: auto;
-                    background:url("img/coffre.png");
+                    background:url("coffre.png");
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size:190px;
