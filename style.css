@@ -8,7 +8,7 @@
   
   }
 body{
-	 background::linear-gradient(to bottom ,rgba(6,55,115,25), #0091FF);
+	 background:linear-gradient(to bottom ,rgba(6,55,115,25), #0091FF);
 }
   .banner{
     position:relative;
