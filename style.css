@@ -80,7 +80,7 @@
     transform-origin:left;
   }
  .toggle{position:relative;height: 30px;width: 30px;
-                    background: url("img/toggle.png");
+                    background: url("toggle.png");
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 30px;
@@ -232,7 +232,7 @@ background: linear-gradient(to bottom,rgba(6,55,115,25),rgba(6,70,130,35),#0091F
    width: 170px;
   margin-left: auto;
     margin-right: auto;
-                    background:url("coffre.png");
+                    background-image:url("coffre.png");
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size:190px;
