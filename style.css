@@ -8,7 +8,7 @@
   
   }
 body{
-	 background-color: #0091FF;
+	 background::linear-gradient(to bottom ,rgba(6,55,115,25), #0091FF);
 }
   .banner{
     position:relative;
@@ -397,10 +397,10 @@ background:linear-gradient(to bottom,rgba(6,55,115,25),rgba(6,70,130,35),#0091FF
     .partie2 h2 ,.partie2 p{padding:5px;}
 
     .partie3 h2 ,.partie3 p{padding:5px;}
-    .partie6{ flex-direction: column;}
-    .partie6 .form{ width:90%;margin:auto;}
+    .partie6{ flex-direction: column; display: flex; align-items: center;justify-content: center;text-align: center;}
+    .partie6 .form{ width:90%;margin:20px;}
     
-    .partie6 .imgbx2 img{ margin-top:20%;margin:auto;margin-left:50%; }
+    .partie6 .imgbx2 img{ align-self: center;margin-left:-10%;margin-bottom: 10%;}
     footer { height:30%;
       width:70%;}
 }
