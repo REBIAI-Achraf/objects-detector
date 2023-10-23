@@ -163,7 +163,20 @@
       }
       var r = skrollr.init();
     </script>
+<script>
+        // Fonction de détection du type d'appareil (mobile)
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
 
+        // Supprimer le script si l'appareil est un mobile
+        if (isMobile()) {
+            var skrollrScript = document.querySelector('script[src="skrollr.js"]');
+            if (skrollrScript) {
+                skrollrScript.remove();
+            }
+        }
+    </script>
 
     <div class="main-footer">
     <footer id="footer" >
