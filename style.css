@@ -7,7 +7,9 @@
     position: relative;
   
   }
-
+body{
+	 background: #0091FF;
+}
   .banner{
     position:relative;
     width: 100%;
