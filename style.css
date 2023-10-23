@@ -8,8 +8,7 @@
   
   }
 body{
-	 background:linear-gradient(to bottom ,rgba(6,55,115,25), #0091FF);
-}
+	 background:rgba(6,55,115,25);}
   .banner{
     position:relative;
     width: 100%;
