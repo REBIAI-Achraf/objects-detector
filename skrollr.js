@@ -1778,3 +1778,4 @@
 	}
 
 }(window, document));
+var r = skrollr.init();
