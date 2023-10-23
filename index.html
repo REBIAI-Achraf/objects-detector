@@ -1,0 +1,182 @@
+
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8" name="viewport"content="width=device-width,initial-scale=1.0">
+      <link rel="shortcut icon" href="S.PNG"/>
+      <title>Objects Detector</title>  
+
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        } 
+      });
+    });
+    </script>          
+</head>
+
+<body>
+
+  <section class="banner"id="top">
+    <header>
+      <div data-0-top="opacity:0;left:100px" data-30-top="opacity:1;left:0px" class="lg">
+      <a href="#top" class="logo" ><img src="S.PNG" height="80px" style="filter: drop-shadow(0 0 1px black);"><span style="position:relative;top:-30px;text-shadow:0 0 4px #000000;" class="title"> Stolen or not</span></a>
+  </div>
+      <div class="toggle" onclick="toggle();"></div>
+    </header>
+    <div class="content" data-0-top="opacity:0;left:100px" data-50-top="opacity:1;left:0px">
+      <div class="contentbx">
+        <h2 >Objects Detector</h2>
+        <p>Welcome to Objects Detector, a detector and registry of stolen objects. The website allows you to check if the item you are interested in has already been stolen or not. It also enables you to report a stolen item to raise awareness and prevent others from purchasing it, as well as to help you recover it. The website also offers other services. Click on the button below to learn more.<br><br>  
+         <a href="#service"><button style="width: 180px;padding: 10px 30px ;">Learn More</button></a>
+      </div>
+      <div class="imgbx" >
+        <img src="img/icone-od.PNG" height="360px" >
+      </div>
+   </div>
+  <div class="menu">
+   <ul >
+    <li><a href="#top"><i id="icon"class="fas fa-home"></i> &emsp; Home </a></li>
+  
+    <li><a href="connexion.php"><i id="icon"class="fas fa-user-alt"></i>&emsp;Log in </a></li>
+    
+    <li><a href="#service"><i id="icon" class="fas fa-handshake"></i>&emsp;Services</a></li>
+  
+    <li><a href="#Apropos"><i id="icon"class="fas fa-question-circle"></i>&emsp;About Us</a></li>
+    
+    <li><a href="#contact"> <i id="icon"class="fas fa-envelope"></i>&emsp;Contact us</a></li>
+  </ul>
+  </div>
+  <a href="#footer"  data-0-bottom="opacity:1;" data-0-top="opacity:0;" style="position:fixed;margin-left:40%;margin-top:550px;z-index:0;"><img src="img/flesh.png"  height="40px" class="arrow"></a>
+  </section>
+ 
+
+
+  <section class="partie1">
+    <div class="dec"data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-50px;">
+      <h2>Declare an object </h2>
+      <br>
+      <p>If you are a victim of theft or have lost an item that belongs to you, do not hesitate to report it. </p>
+      <br>
+     <a href="connexion.php"><button>Declare an Object</button></a> 
+    </div>
+    <div class="det"data-center-center="opacity:1;right:0;"data-0-bottom="opacity:0;right:-50px;">
+      <h2>Detect an object </h2>
+      <br>
+      <p>If you want to buy a used item, detect it with us to find out if it has been stolen or not </p>
+      <br>
+      <a href="detection-num.php"> <button>Detect an object</button></a>
+    </div>
+  </section>
+
+
+    <section class="partie2" >
+     <div class="inscription" >
+      <h2 data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-100px;">Don't hesitate to join us</h2>
+      <span data-center-center="opacity:1;right:0;"data-0-bottom="opacity:0;right:-60px;">
+      <p>Register before declaring an object, just in case your item is detected, we will inform you immediately</p>
+      <br>
+       <img src="img/team.png" height="160px">
+       <br> <br>  <br> 
+      <a href="connexion.php"><button> Sign In</button></a></span>
+     </div>
+    </section>
+
+    <section class="partie3" id="service" >
+      <div class="service">
+<h2 data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-100px;"> Our Services </h2>
+<p data-center-center="opacity:1;right:0;"data-0-bottom="opacity:0;right:-60px;">Object Detector allows you to:<br><br>
+  Declare a stolen item, and as soon as someone detects your item, you will be informed directly, providing you with some information that can be useful in its recovery.<br><br>
+  Detect whether an item offered to you is stolen or not.<br><br>
+  Object Detector also offers an additional feature:<br><br>
+    "The Virtual Safe box"<br>
+    <br>
+  It allows you to store your sensitive documents in case of theft or loss.</p>
+  
+  <a href="connexion.php"><div class="locker"data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-100px;"></div></a>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="partie4" id="Apropos"> 
+    <div class="apropos">
+      <h2 data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-100px;">About</h2>
+      <p data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-60px;">
+          Welcome to OBJECT DETECTOR STOLEN OR NOT. Our website is at your service if you want to buy a used item, whether it's a smartphone, PC, tablet, bicycle, TV, or anything else. Our site detects whether the item you're interested in has already been stolen or not and whether the seller or point of sale is reliable or not. You can also report a theft to raise awareness and discourage people from buying the item, encouraging them to return it to its rightful owner.
+      </p>
+      
+    </section>
+
+
+    <section class="partie5" id="contact">
+<h2 data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-100px;">Contact Us</h2>
+<p data-center-center="opacity:1;right:0;"data-0-bottom="opacity:0;right:-40px;">Welcome to OBJECT DETECTOR STOLEN OR NOT. You can contact us using the form at the bottom by filling in all the requested information. In case you need more information about something that seems unclear to you or if you encounter any issues with object detection, reporting a lost item, or using the virtual safe  </p>
+</section>
+
+<section class="partie6">
+<div class="form">
+
+  <div class="inputbx"data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-50px;">
+
+      <form method="post">
+    <input type="text" placeholder="Full name" name="nom">
+  </div>
+  <div class="inputbx"data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-50px;">
+    <input type="email" placeholder="Mail"name="mail">
+  </div>
+  <div class="inputbx"data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-50px;">
+    <input type="number" placeholder="Phone number"name="num">
+  </div>
+  <div class="inputbx"data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-50px;">
+    <textarea type="text" placeholder="Write your message"name="msg"></textarea>
+  </div>
+    <button type="submit" name="send">Send </button>
+    </div>
+      <form>
+        
+<div class="imgbx2"><img src="img/mail.png" height="250px"></div>
+ 
+
+        </section>
+      <script src="skrollr.js"></script>
+    <script type="text/javascript">
+      function toggle(){
+        const toggle = document.querySelector('.toggle');
+        const banner = document.querySelector('.banner');
+        toggle.classList.toggle('active')
+        banner.classList.toggle('active')
+  
+      }
+      var r = skrollr.init();
+    </script>
+
+
+    <div class="main-footer">
+    <footer id="footer" >
+      <br><br>
+      <sub>© All rights reserved -Rbdevelopment</sub><br>
+<sub>Realized and developed by Mr. Rebiai Achraf</sub><br>
+<sub>Original idea: Mr. Rebiai Achraf</sub><br>
+<sub>2021-2022</sub><br>
+
+    </footer>
+    <a href="#top">
+    <img src="S.PNG" height="80px" style="filter: drop-shadow(0 0 1px black);margin-top:100px"/></a>
+</div>
+
+  
+</body>
+</html>
